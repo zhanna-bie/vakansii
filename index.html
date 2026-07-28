@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Вакансії психолога — Західна Україна</title>
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:#f6f7f9;color:#16202e;font:15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 50px}
+h1{font-size:23px;margin:0 0 3px}
+.sub{color:#64748b;font-size:13px;margin-bottom:18px}
+.bar{background:#fff;border:1px solid #e3e8ef;border-radius:12px;padding:14px;margin-bottom:14px;
+     display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+select,input[type=text]{padding:8px 10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;font-size:14px;background:#fff}
+input[type=text]{min-width:180px}
+input[type=range]{width:180px;vertical-align:middle}
+.lab{font-size:12px;color:#64748b;font-weight:600;text-transform:uppercase;letter-spacing:.3px;display:block;margin-bottom:5px}
+.chip{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:999px;padding:6px 13px;font:inherit;font-size:13px;cursor:pointer;margin-right:4px}
+.chip.on{color:#fff}
+.chip.on.hi{background:#15803d;border-color:#15803d}
+.chip.on.mid{background:#b45309;border-color:#b45309}
+.chip.on.lo{background:#64748b;border-color:#64748b}
+.rst{margin-left:auto;align-self:center;background:none;border:none;color:#1f6feb;cursor:pointer;font:inherit;font-size:13px;text-decoration:underline}
+.cnt{font-size:13px;color:#64748b;margin:0 0 10px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e3e8ef;border-radius:12px;overflow:hidden}
+th{background:#1f3864;color:#fff;font-size:12px;text-align:left;padding:11px 12px;font-weight:600;
+   text-transform:uppercase;letter-spacing:.3px;cursor:pointer;white-space:nowrap}
+th:hover{background:#2a4a80}
+th .ar{opacity:.45;font-size:10px}
+td{padding:12px;border-top:1px solid #eef1f5;font-size:14px;vertical-align:top}
+tr.hi td:first-child{box-shadow:inset 4px 0 0 #22a45d}
+tr.mid td:first-child{box-shadow:inset 4px 0 0 #e0a020}
+tr.lo td:first-child{box-shadow:inset 4px 0 0 #b6bec9}
+tr:hover td{background:#fafbfd}
+.vac a{color:#1b3f77;font-weight:650;text-decoration:none;border-bottom:1.5px solid #b9c6dc}
+.vac a:hover{color:#1f6feb;border-bottom-color:#1f6feb}
+.emp{color:#64748b;font-size:12.5px;margin-top:3px}
+.pay{font-weight:700;color:#15803d;white-space:nowrap}
+.pay.no{color:#94a3b8;font-weight:400;font-size:12.5px;white-space:normal}
+.fit{display:inline-block;font-size:11.5px;font-weight:650;padding:2px 9px;border-radius:5px;margin-bottom:5px;white-space:nowrap}
+.fit.hi{background:#dcf5e5;color:#15803d}
+.fit.mid{background:#fdf1d8;color:#a16207}
+.fit.lo{background:#eef1f4;color:#64748b}
+.why{font-size:12.5px;color:#475569}
+.req{font-size:12.5px;color:#64748b}
+.req b{color:#334155;font-weight:600}
+.city{font-weight:600;font-size:13px;white-space:nowrap}
+.none{text-align:center;padding:40px;color:#94a3b8}
+details{margin-top:20px;background:#fff;border:1px solid #e3e8ef;border-radius:12px;padding:12px 16px;font-size:13.5px}
+summary{cursor:pointer;font-weight:600}
+details p{color:#475569}
+@media(max-width:820px){
+  .wrap{padding:14px 10px 40px}
+  h1{font-size:20px}
+  .bar{gap:12px}
+  table,thead,tbody,th,td,tr{display:block}
+  thead{display:none}
+  table{border:0;background:none}
+  tr{background:#fff;border:1px solid #e3e8ef;border-radius:12px;margin-bottom:10px;padding:10px 4px}
+  td{border:0;padding:5px 12px}
+  td::before{content:attr(data-l);display:block;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.3px;margin-bottom:2px}
+  tr.hi td:first-child,tr.mid td:first-child,tr.lo td:first-child{box-shadow:none}
+  tr.hi{border-left:5px solid #22a45d}
+  tr.mid{border-left:5px solid #e0a020}
+  tr.lo{border-left:5px solid #b6bec9}
+}
+</style></head><body><div class="wrap">
+<h1>Вакансії психолога — Західна Україна</h1>
+<div class="sub" id="sub"></div>
+
+<div class="bar">
+  <div><span class="lab">Місто</span><select id="c"><option value="">Усі міста</option><option>Івано-Франківськ</option><option>Дистанційно / вся Україна</option><option>Луцьк</option><option>Луцьк (Ковель)</option><option>Львів</option><option>Рівне</option><option>Рівне (Сарни)</option><option>Тернопіль</option><option>Ужгород</option><option>Ужгород (Мукачево)</option><option>Ужгород (Чоп)</option><option>Уся Україна (стежити)</option><option>Чернівці</option></select></div>
+  <div><span class="lab">Мін. зарплата: <span id="sl">будь-яка</span></span><input type="range" id="s" min="0" max="60000" step="1000" value="0"></div>
+  <div><span class="lab">Пошук</span><input type="text" id="q" placeholder="ВПО, ветерани, НГО…"></div>
+  <div><span class="lab">Відповідність</span>
+    <button class="chip hi" data-f="hi">Висока</button><button class="chip mid" data-f="mid">Середня</button><button class="chip lo" data-f="lo">Низька</button>
+  </div>
+  <button class="rst" id="r">Скинути</button>
+</div>
+
+<p class="cnt" id="n"></p>
+<table>
+<thead><tr>
+  <th data-k="city">Місто <span class="ar">&#8597;</span></th>
+  <th data-k="title">Вакансія і роботодавець <span class="ar">&#8597;</span></th>
+  <th data-k="salaryMin">Зарплата <span class="ar">&#8597;</span></th>
+  <th data-k="">Тип закладу і вимоги</th>
+  <th data-k="fitk">Наскільки підходить <span class="ar">&#8597;</span></th>
+</tr></thead>
+<tbody id="b"></tbody>
+</table>
+
+<details><summary>Як читати таблицю</summary>
+<p><b>Зелена смужка</b> — вимоги закриває спеціаліст з досвідом від 1 року, з практикою у психіатрії, з вразливими групами або переселенцями. <b>Жовта</b> — підходить частково. <b>Сіра</b> — кандидат формально не проходить або позиція нижча за рівень спеціаліста.</p>
+<p><b>Зарплата.</b> Цифра — точна вилка з оголошення. Фраза («конкурентна винагорода», «обговорюється на співбесіді») — дослівні слова роботодавця. «Не вказано» — про гроші в оголошенні немає нічого. Повзунок мінімальної зарплати ховає вакансії без конкретної суми.</p>
+<p><b>Назва вакансії клікається</b> — відкриє сторінку оголошення. Заголовки колонок теж клікаються — сортують таблицю.</p>
+</details>
+</div>
+
+<script>
+var D = [{"city": "Львів", "title": "Психолог (відділення підтримки сімейних форм виховання)", "salary": "Не вказано", "salaryMin": 0, "employer": "Джерело, центр соціальних та реабілітаційних послуг", "type": "НГО / соціальна установа", "req": "Вища освіта «Психологія», досвід від 1 року, бажано з сім'ями і підлітками", "fit": "Висока", "why": "Досвід 1 рік = точне попадання. Кризове консультування, індивідуальна і групова робота — цей профіль", "source": "work.ua", "url": "https://www.work.ua/jobs/8348922/", "f": "hi"}, {"city": "Львів", "title": "Психолог (психодіагностика, реабілітація)", "salary": "Відрядна оплата праці", "salaryMin": 0, "employer": "Форвард-Орто, ТОВ", "type": "Приватна компанія (реабілітація)", "req": "Відповідна освіта, досвід від 2 років", "fit": "Висока", "why": "Психодіагностика, психокорекція, робота з постраждалими від військових дій, мультидисциплінарна команда — найближче до клінічного профілю", "source": "work.ua", "url": "https://www.work.ua/jobs/8284218/", "f": "hi"}, {"city": "Львів", "title": "Провідний психолог відділу соціально-виховної та психологічної роботи", "salary": "17 000 – 18 000 грн", "salaryMin": 17000, "employer": "Львівська установа виконання покарань №19", "type": "Державна установа", "req": "Бакалавр АБО магістр психології (053) — досвід не вимагається", "fit": "Висока", "why": "Прямо сказано: бакалавра достатньо. Психодіагностика, психокорекція, тренінги. Є бронювання і повний соцпакет", "source": "robota.ua", "url": "https://robota.ua/company9080056/vacancy10646402", "f": "hi"}, {"city": "Львів", "title": "Психолог у Новояворівськ (шукають у Львові)", "salary": "20 000 – 50 000 грн", "salaryMin": 20000, "employer": "Крилаті", "type": "Приватний центр", "req": "Вища освіта «Психологія», досвід від 1 року; розглядають і спеціалістів на початку шляху", "fit": "Висока", "why": "Чітка вилка від 20 тис., прямо пишуть що розглядають початківців. Дитячий профіль — суміжний напрям", "source": "work.ua", "url": "https://www.work.ua/jobs/8339226/", "f": "hi"}, {"city": "Львів", "title": "Провідний фахівець з тренінгів та навчання (ПЗПСП / MHPSS)", "salary": "Не вказано (просять вказати бажаний рівень ЗП у резюме)", "salaryMin": 0, "employer": "Товариство Червоного Хреста України", "type": "Міжнародна організація", "req": "Вища освіта психологія/соцробота/педагогіка; досвід у гуманітарній сфері від 1 року — перевага", "fit": "Середня", "why": "Досвід від 1 року зараховується як перевага. Сфера психічного здоров'я — цей профіль. Мед.страхування, безкоштовна психологічна підтримка", "source": "robota.ua", "url": "https://robota.ua/company3371671/vacancy11267252", "f": "mid"}, {"city": "Львів", "title": "Психолог", "salary": "Не вказано", "salaryMin": 0, "employer": "Центр пробації у Львівській області", "type": "Державна установа", "req": "Вища психологічна освіта; досвід з вразливими групами — плюс", "fit": "Середня", "why": "Робота з людьми в кризі, психологічна оцінка ризиків. Досвід з вразливими групами з вразливими групами — прямий плюс. Але зарплату не називають", "source": "work.ua", "url": "https://www.work.ua/jobs/7693103/", "f": "mid"}, {"city": "Львів", "title": "Соціальний працівник / соціальна працівниця", "salary": "Не вказано («конкурентна заробітна плата»)", "salaryMin": 0, "employer": "Єзуїтська служба біженців (JRS Ukraine)", "type": "Міжнародна гуманітарна НГО", "req": "Вища освіта соцробота/психологія/педагогіка, досвід у соціальній або гуманітарній сфері", "fit": "Середня", "why": "Організація працює в Protection і MHPSS з ВПО і біженцями — профіль роботи з переселенцями. Але посада соцпрацівника, не психолога", "source": "robota.ua", "url": "https://robota.ua/company13876597/vacancy11267180", "f": "mid"}, {"city": "Львів", "title": "Практичний психолог", "salary": "28 000 – 32 000 грн", "salaryMin": 28000, "employer": "Простір можливостей святого Антонія, КУ", "type": "Комунальна установа", "req": "Досвід від 2 років, вища освіта; підлітки і молодь з особливими потребами", "fit": "Середня", "why": "Хороша зарплата, робота з особливими потребами. Досвіду формально просять 2 роки", "source": "work.ua", "url": "https://www.work.ua/jobs/7897779/", "f": "mid"}, {"city": "Львів", "title": "Психолог, корекційний педагог, дефектолог", "salary": "23 000 – 40 000 грн (обговорюються на співбесіді)", "salaryMin": 23000, "employer": "АВІ, інклюзивний центр, ГО", "type": "НГО / інклюзивний центр", "req": "Вища освіта, досвід з дітьми з особливими потребами від 1 року; готові взяти студента", "fit": "Середня", "why": "Хороша вилка, беруть студентів. Але потрібен саме досвід з дітьми з ООП, якого поки немає", "source": "work.ua", "url": "https://www.work.ua/jobs/5108980/", "f": "mid"}, {"city": "Львів", "title": "Фахівець з питань захисту", "salary": "Не вказано", "salaryMin": 0, "employer": "Регіон Карпат, МФОЗНС / NEEKA", "type": "Міжнародна НГО", "req": "Повна або незакінчена вища освіта, досвід у соціальній/гуманітарній сфері, англійська середній рівень", "fit": "Середня", "why": "Робота з ВПО у громадах. Незакінчена вища теж підходить. Але посада не психологічна за суттю", "source": "robota.ua", "url": "https://robota.ua/company6453168/vacancy11263894", "f": "mid"}, {"city": "Львів", "title": "Психолог по роботі з підлітками", "salary": "Не вказано («гідну заробітну плату»)", "salaryMin": 0, "employer": "Школа вільних та небайдужих", "type": "Приватна школа", "req": "Вища психологічна освіта, досвід роботи з дітьми та підлітками", "fit": "Середня", "why": "Досвід від 1 року підходить, але просять саме досвід з дітьми/підлітками. Суми не називають", "source": "work.ua", "url": "https://www.work.ua/jobs/5288111/", "f": "mid"}, {"city": "Львів", "title": "Асистент психолога (без досвіду)", "salary": "29 000 – 36 000 грн", "salaryMin": 29000, "employer": "Григоренко Д.М., ФОП", "type": "Приватна практика", "req": "Без досвіду", "fit": "Середня", "why": "Непогана зарплата і вхід без досвіду, але це асистентська позиція — крок назад від клінічної роботи", "source": "robota.ua", "url": "https://robota.ua/company16496372/vacancy11275413", "f": "mid"}, {"city": "Львів", "title": "Практичний психолог", "salary": "50 000 грн", "salaryMin": 50000, "employer": "67 ОМБр", "type": "Військова служба", "req": "Вища психологічна освіта", "fit": "Середня", "why": "Найвища гарантована зарплата серед цивільних-за-рівнем позицій, але це військова служба", "source": "robota.ua", "url": "https://robota.ua/company14200351/vacancy11017120", "f": "mid"}, {"city": "Львів", "title": "Старший психолог – 815474", "salary": "60 000 – 88 000 грн (до оподаткування)", "salaryMin": 60000, "employer": "Міжнародний комітет Червоного Хреста (ICRC)", "type": "Міжнародна організація", "req": "Мін. 3 роки загального досвіду + мін. 2 роки в MHPSS; ліцензія психолога; англійська професійна", "fit": "Низька", "why": "Найкраща зарплата в добірці і ідеальний профіль (робота з постраждалими від насильства), АЛЕ вимагає 3+ роки досвіду і професійну англійську. Варто варто стежити за подібними вакансіями ICRC", "source": "robota.ua", "url": "https://robota.ua/company2375442/vacancy11266933", "f": "lo"}, {"city": "Львів", "title": "Психолог (реабілітація ветеранів)", "salary": "Не вказано", "salaryMin": 0, "employer": "Malteser Relief Service", "type": "Міжнародна гуманітарна НГО", "req": "Магістр психології; ОБОВ'ЯЗКОВИЙ досвід з ветеранами і їхніми родинами; досвід від 3 років", "fit": "Низька", "why": "Профіль організації дуже підходить, але вимоги жорсткі: магістр + 3 роки + саме досвід з ветеранами", "source": "robota.ua", "url": "https://robota.ua/company13654674/vacancy11282904", "f": "lo"}, {"city": "Львів", "title": "Психолог", "salary": "10 000 – 20 000 грн", "salaryMin": 10000, "employer": "Family School Оксани Чорнейко", "type": "Приватна школа", "req": "Обов'язково профільна освіта; робота з дітьми 2–18 років", "fit": "Низька", "why": "Неповна зайнятість, невисока зарплата, дитячий профіль без відповідний досвіду", "source": "robota.ua", "url": "https://robota.ua/company12225937/vacancy11251864", "f": "lo"}, {"city": "Львів", "title": "Помічник корпоративного психолога (без досвіду)", "salary": "38 000 грн + премії", "salaryMin": 38000, "employer": "ТаргетПро", "type": "Приватна компанія", "req": "Досвід не потрібен", "fit": "Низька", "why": "Висока зарплата, але це не психологічна практика — фактично помічник у корпоративній сфері", "source": "robota.ua", "url": "https://robota.ua/company14663859/vacancy11215674", "f": "lo"}, {"city": "Львів", "title": "Помічник корпоративного психолога (досвід не потрібен)", "salary": "35 000 – 40 000 грн", "salaryMin": 35000, "employer": "Жиркова А.В., ФОП", "type": "Приватна практика", "req": "Досвід не потрібен", "fit": "Низька", "why": "Те саме: гроші є, клінічної практики немає", "source": "robota.ua", "url": "https://robota.ua/company14395008/vacancy11256932", "f": "lo"}, {"city": "Львів", "title": "Помічник психолога", "salary": "29 000 грн + бонуси", "salaryMin": 29000, "employer": "WanderWays", "type": "Приватна компанія", "req": "Не вказано", "fit": "Низька", "why": "Помічницька позиція", "source": "robota.ua", "url": "https://robota.ua/company14793430/vacancy10915697", "f": "lo"}, {"city": "Львів", "title": "Психолог, спеціаліст раннього розвитку дітей", "salary": "12 000 – 18 000 грн", "salaryMin": 12000, "employer": "Pershi Slova", "type": "Приватний центр", "req": "Вища освіта, досвід з дітьми вітається", "fit": "Низька", "why": "Нижче 20 000 грн., дошкільний профіль", "source": "work.ua", "url": "https://www.work.ua/jobs/8274633/", "f": "lo"}, {"city": "Львів", "title": "Лікар-психіатр дитячий", "salary": "Не вказано («стабільна заробітна плата»)", "salaryMin": 0, "employer": "Veselka, центр сучасної медицини", "type": "Приватна клініка", "req": "Вища МЕДИЧНА освіта, спеціалізація «Дитяча психіатрія», чинний сертифікат лікаря", "fit": "Низька", "why": "Потрібна лікарська освіта — за формальними вимогами кандидат не проходить", "source": "work.ua", "url": "https://www.work.ua/jobs/8258169/", "f": "lo"}, {"city": "Львів", "title": "Практичний психолог (0,5 ставки)", "salary": "6 000 – 7 000 грн", "salaryMin": 6000, "employer": "Військовий коледж сержантського складу НАСВ", "type": "Державна установа", "req": "Вища освіта", "fit": "Низька", "why": "Пів ставки, зарплата значно нижча 20 000 грн", "source": "robota.ua", "url": "https://robota.ua/company12458464/vacancy9190424", "f": "lo"}, {"city": "Львів", "title": "Корпоративний психолог", "salary": "Не вказано", "salaryMin": 0, "employer": "NG Group Cosmetics, LLC", "type": "Приватна компанія", "req": "Досвід від 2 років", "fit": "Низька", "why": "Корпоративний напрям, не клінічний", "source": "work.ua", "url": "https://www.work.ua/jobs/8347077/", "f": "lo"}, {"city": "Івано-Франківськ", "title": "Соціальний працівник (чоловічий центр MHPSS, постраждалі від війни)", "salary": "Обговорюється на співбесіді («конкурентна грошова винагорода»)", "salaryMin": 0, "employer": "Елеос-Україна (грант GFFO / Johanniter)", "type": "Міжнародна НГО", "req": "Вища освіта соцробота/психологія; розуміння роботи з травмою, CRSV; готовність до змінного графіка (10 діб/міс)", "fit": "Висока", "why": "Найближче до клінічного профілю: травма, насильство, постраждалі від війни, MHPSS. Проєкт до 2028 року — стабільність", "source": "robota.ua", "url": "https://robota.ua/company13384456/vacancy11266673", "f": "hi"}, {"city": "Івано-Франківськ", "title": "Кейс-менеджер Денного кабінету «Будинку Героя» (с. Лисець)", "salary": "За результатами співбесіди", "salaryMin": 0, "employer": "Елеос-Україна", "type": "Міжнародна НГО", "req": "Див. умови вакансії", "fit": "Висока", "why": "Та сама організація, робота з ветеранами і постраждалими від війни", "source": "robota.ua", "url": "https://robota.ua/company13384456/vacancy11274330", "f": "hi"}, {"city": "Івано-Франківськ", "title": "Психолог (начальник групи психологічного супроводу)", "salary": "23 000 – 123 000 грн", "salaryMin": 23000, "employer": "Центр рекрутингу української армії", "type": "Військова служба", "req": "Вища психологічна освіта, досвід від 1 року, вік від 20 років", "fit": "Середня", "why": "Найширша вилка в добірці, досвід 1 рік підходить. Але це військова служба з офіцерським оформленням", "source": "work.ua", "url": "https://www.work.ua/jobs/5909228/", "f": "mid"}, {"city": "Івано-Франківськ", "title": "Психолог (дитячий)", "salary": "20 000 – 40 000 грн", "salaryMin": 20000, "employer": "Мосійчук А., ФОП", "type": "Приватна практика", "req": "Досвід від 1 року, вища освіта; корекційні заняття для дітей з інвалідністю", "fit": "Середня", "why": "Досвід 1 рік підходить, зарплата від 20 тис. Дитячий профіль — новий напрям", "source": "work.ua", "url": "https://www.work.ua/jobs/8347869/", "f": "mid"}, {"city": "Івано-Франківськ", "title": "Соціальний працівник (кейс-менеджер транскордонного супроводу)", "salary": "Не вказано", "salaryMin": 0, "employer": "Рокада, БФ БО", "type": "НГО", "req": "Див. умови вакансії", "fit": "Середня", "why": "Фонд працює з ветеранами і вразливими групами — профільно", "source": "robota.ua", "url": "https://robota.ua/company8954882/vacancy11227928", "f": "mid"}, {"city": "Івано-Франківськ", "title": "Соціальний педагог / педагогиня", "salary": "Не вказано (мед.страхування, супервізійна психологічна підтримка)", "salaryMin": 0, "employer": "СОС Дитячі містечка Україна, БФ, МБО", "type": "Міжнародна НГО", "req": "Вища освіта соцробота/психологія/педагогіка, успішний досвід з дітьми і підлітками від 2 років", "fit": "Середня", "why": "Хороший роботодавець з супервізією, але просять досвід з дітьми", "source": "work.ua", "url": "https://www.work.ua/jobs/8256492/", "f": "mid"}, {"city": "Івано-Франківськ", "title": "Помічник психолога (без досвіду)", "salary": "35 000 – 40 000 грн", "salaryMin": 35000, "employer": "SeleroMarket", "type": "Приватна компанія", "req": "Без досвіду", "fit": "Низька", "why": "Гроші є, психологічної практики немає", "source": "robota.ua", "url": "https://robota.ua/company15961045/vacancy11223898", "f": "lo"}, {"city": "Івано-Франківськ", "title": "Асистент психолога (без досвіду)", "salary": "26 000 – 36 000 грн", "salaryMin": 26000, "employer": "Гапєєва Р.А., ФОП", "type": "Приватна практика", "req": "Без досвіду", "fit": "Низька", "why": "Асистентська позиція", "source": "robota.ua", "url": "https://robota.ua/company16476148/vacancy11266550", "f": "lo"}, {"city": "Івано-Франківськ", "title": "Починаючий психолог (оплачуване навчання)", "salary": "23 000 – 28 000 грн", "salaryMin": 23000, "employer": "Veltrix", "type": "Приватна компанія", "req": "Без досвіду", "fit": "Низька", "why": "Стартова позиція для новачків — нижче рівня спеціаліста", "source": "robota.ua", "url": "https://robota.ua/company15955752/vacancy10849760", "f": "lo"}, {"city": "Тернопіль", "title": "Лікар-психолог", "salary": "20 000 грн", "salaryMin": 20000, "employer": "Тернопільський обласний центр зайнятості", "type": "Державна установа", "req": "Не вказано", "fit": "Середня", "why": "Рівно відповідний планка 20 тис., державне оформлення", "source": "robota.ua", "url": "https://robota.ua/company7185494/vacancy11118036", "f": "mid"}, {"city": "Тернопіль", "title": "Логопед, корекційний педагог, дитячий психолог", "salary": "20 000 – 30 000 грн (залежить від кількості годин)", "salaryMin": 20000, "employer": "Світ Дитини", "type": "Приватний центр", "req": "Не вказано", "fit": "Середня", "why": "Від 20 тис., але дитячий/логопедичний профіль", "source": "robota.ua", "url": "https://robota.ua/company14706069/vacancy11169543", "f": "mid"}, {"city": "Тернопіль", "title": "Вихователь", "salary": "20 000 – 30 000 грн", "salaryMin": 20000, "employer": "Центр соціально-психологічної реабілітації дітей Тернопільської ОДА", "type": "Державна установа", "req": "Не вказано", "fit": "Середня", "why": "Центр соц-психологічної реабілітації — суміжний профіль, зарплата від 20 тис.", "source": "robota.ua", "url": "https://robota.ua/company16509698/vacancy11284208", "f": "mid"}, {"city": "Тернопіль", "title": "Психолог", "salary": "15 788 грн", "salaryMin": 15788, "employer": "Центр надання соціальних послуг Байковецької сільської ради", "type": "Комунальна установа", "req": "Вища освіта", "fit": "Низька", "why": "Нижче 20 000 грн.", "source": "work.ua", "url": "https://www.work.ua/jobs/8298759/", "f": "lo"}, {"city": "Тернопіль", "title": "Лікар-психіатр", "salary": "Ставка + 30% від пацієнтів (обговорюється на співбесіді)", "salaryMin": 0, "employer": "Шпиталь Шептицького, БФ", "type": "Приватна лікарня", "req": "Вища МЕДИЧНА освіта, спеціалізація «Психіатрія», чинні документи для медпрактики", "fit": "Низька", "why": "Потрібна лікарська освіта. Але це партнер Caritas Austria, IOM, GIZ — корисний контакт на майбутнє", "source": "work.ua", "url": "https://www.work.ua/jobs/8326647/", "f": "lo"}, {"city": "Чернівці", "title": "Психолог / Психологиня (ФОП) — психосоціальна підтримка жінок", "salary": "Не вказано («конкурентну винагороду»)", "salaryMin": 0, "employer": "Благодійний фонд «Рокада»", "type": "НГО", "req": "Вища освіта «Психологія», досвід індивідуального і групового консультування; досвід з вразливими категоріями — перевага", "fit": "Висока", "why": "Досвід з вразливими групами з вразливими групами — прямо зазначена перевага. Індивідуальне + групове консультування, психоедукація. Гібридний формат", "source": "robota.ua", "url": "https://robota.ua/company8954882/vacancy11224024", "f": "hi"}, {"city": "Чернівці", "title": "Психолог, військовослужбовець", "salary": "25 000 – 55 000 грн (залежно від бойового завдання)", "salaryMin": 25000, "employer": "108 ОГШБ", "type": "Військова служба", "req": "Не вказано", "fit": "Середня", "why": "Зарплата від 25 тис., але військова служба", "source": "robota.ua", "url": "https://robota.ua/company16009920/vacancy10885093", "f": "mid"}, {"city": "Чернівці", "title": "Практичний психолог", "salary": "21 420 грн", "salaryMin": 21420, "employer": "Чернівецький обласний центр зайнятості", "type": "Державна установа", "req": "Не вказано", "fit": "Середня", "why": "Найвища зі ставок ОЦЗ у Чернівцях — трохи вище 20 000 грн", "source": "robota.ua", "url": "https://robota.ua/company7187807/vacancy11218620", "f": "mid"}, {"city": "Чернівці", "title": "Логопед, дефектолог", "salary": "25 000 – 60 000 грн", "salaryMin": 25000, "employer": "Daniel's Kid's (центр розвитку дітей з аутизмом)", "type": "Приватний центр", "req": "Готові навчати з нуля", "fit": "Низька", "why": "Висока вилка і навчання, але це логопедія/дефектологія, не психологія", "source": "work.ua", "url": "https://www.work.ua/jobs/8341974/", "f": "lo"}, {"city": "Чернівці", "title": "Практичний психолог (кілька ставок)", "salary": "8 647 / 8 700 / 9 570 / 12 000 грн", "salaryMin": 8647, "employer": "Чернівецький обласний центр зайнятості", "type": "Державна установа", "req": "Не вказано", "fit": "Низька", "why": "Значно нижче 20 000 грн", "source": "robota.ua", "url": "https://robota.ua/company7187807/vacancy11236938", "f": "lo"}, {"city": "Луцьк (Ковель)", "title": "Психолог, корекційний педагог", "salary": "20 000 – 45 000 грн", "salaryMin": 20000, "employer": "Хмелярська К.Ю., ФОП", "type": "Приватна практика", "req": "Досвід від 1 року, вища освіта; діти з ООП", "fit": "Середня", "why": "Найкраща зарплата на Волині, досвід 1 рік підходить. Але Ковель, не Луцьк, і дитячий профіль", "source": "work.ua", "url": "https://www.work.ua/jobs/5857350/", "f": "mid"}, {"city": "Луцьк (Ковель)", "title": "Практичний психолог у медичний фаховий коледж", "salary": "12 343 грн", "salaryMin": 12343, "employer": "Ковельська філія Волинського ОЦЗ", "type": "Державна установа", "req": "Вища освіта", "fit": "Низька", "why": "Нижче 20 000 грн", "source": "work.ua", "url": "https://www.work.ua/jobs/8345373/", "f": "lo"}, {"city": "Луцьк", "title": "Психолог", "salary": "8 647 грн", "salaryMin": 8647, "employer": "Волинський обласний центр зайнятості", "type": "Державна установа", "req": "Не вказано", "fit": "Низька", "why": "Значно нижче планки; прямих вакансій психолога в самому Луцьку майже немає", "source": "robota.ua", "url": "https://robota.ua/company6449785/vacancy11084494", "f": "lo"}, {"city": "Луцьк (Ковель)", "title": "Практичний психолог", "salary": "10 000 грн", "salaryMin": 10000, "employer": "ЗДО №8 (Ковель)", "type": "Комунальна установа", "req": "Робота з дітьми дошкільного віку", "fit": "Низька", "why": "Нижче планки", "source": "work.ua", "url": "https://www.work.ua/jobs/7157137/", "f": "lo"}, {"city": "Рівне (Сарни)", "title": "Психолог", "salary": "Не вказано", "salaryMin": 0, "employer": "Сарненська центральна районна лікарня, КНП", "type": "Державна лікарня", "req": "Вища освіта; готові взяти людину з інвалідністю, пенсіонера", "fit": "Середня", "why": "Медичний заклад — найближче до відповідний досвіду в психіатрії серед вакансій Рівненщини. Психологічна підтримка пацієнтів, психокорекція", "source": "work.ua", "url": "https://www.work.ua/jobs/8271876/", "f": "mid"}, {"city": "Рівне", "title": "Практичний психолог", "salary": "Залежно від навантаження (конкретної суми немає)", "salaryMin": 0, "employer": "IT Step School Рівне", "type": "Приватна школа", "req": "Досвід від 2 років, поглиблені знання дитячої психології", "fit": "Середня", "why": "Приватна школа з бронюванням, але просять 2 роки і дитячу психологію", "source": "work.ua", "url": "https://www.work.ua/jobs/6115432/", "f": "mid"}, {"city": "Рівне", "title": "Логопед", "salary": "10 000 – 20 000 грн", "salaryMin": 10000, "employer": "Be Happy, сімейний центр психології та розвитку", "type": "Приватний центр", "req": "Досвід від 1 року; можна з мінімальним досвідом", "fit": "Низька", "why": "Це логопедія, не психологія", "source": "work.ua", "url": "https://www.work.ua/jobs/8307441/", "f": "lo"}, {"city": "Ужгород (Мукачево)", "title": "Психолог (ЗСУ)", "salary": "51 000 – 151 000 грн", "salaryMin": 51000, "employer": "Мукачівський РТЦК та СП", "type": "Військова служба", "req": "Досвід від 2 років, вища освіта", "fit": "Середня", "why": "Найвища вилка по Закарпаттю, але військова служба за контрактом", "source": "work.ua", "url": "https://www.work.ua/jobs/7219939/", "f": "mid"}, {"city": "Ужгород (Чоп)", "title": "Психолог", "salary": "31 000 – 35 000 грн", "salaryMin": 31000, "employer": "94 Прикордонний загін", "type": "Державна / військова служба", "req": "Вища освіта", "fit": "Середня", "why": "Стабільні 31–35 тис., контракт з ДПСУ", "source": "work.ua", "url": "https://www.work.ua/jobs/7978407/", "f": "mid"}, {"city": "Ужгород (Мукачево)", "title": "Психолог (робота з ВПО)", "salary": "Не вказано", "salaryMin": 0, "employer": "Регіон Карпат, МФОЗНС / NEEKA", "type": "Міжнародна НГО", "req": "Вища освіта психологія; досвід практикуючим психологом не менше 3 років; досвід протидії насильству щодо жінок — перевага; власний транспорт — перевага", "fit": "Середня", "why": "Профіль ВПО повністю відповідний, і це Закарпатська область. Але формально просять 3 роки досвіду", "source": "work.ua", "url": "https://www.work.ua/jobs/8249934/", "f": "mid"}, {"city": "Ужгород", "title": "Практичний психолог", "salary": "11 484 – 12 441 грн", "salaryMin": 11484, "employer": "Закарпатський обласний центр зайнятості", "type": "Державна установа", "req": "Не вказано", "fit": "Низька", "why": "Нижче 20 000 грн; прямих вакансій психолога в самому Ужгороді на дошках немає", "source": "robota.ua", "url": "https://robota.ua/company7184519/vacancy11204988", "f": "lo"}, {"city": "Дистанційно / вся Україна", "title": "Клінічний психолог (дистанційна робота)", "salary": "Не вказано — уточнювати в організації", "salaryMin": 0, "employer": "Менталзон", "type": "Приватна онлайн-платформа", "req": "Клінічна/медична психологія", "fit": "Висока", "why": "Єдина знайдена вакансія саме з назвою «клінічний психолог». Дистанційно — можна поєднати з магістратурою і жити в будь-якому місті", "source": "mentalzon.com", "url": "https://mentalzon.com/uk/vacancy/16/", "f": "hi"}, {"city": "Уся Україна (стежити)", "title": "Біржа праці НГО — вакансії психологів і фахівців ПЗПСП", "salary": "Різні; часто вказані у самих оголошеннях", "salaryMin": 0, "employer": "Громадський Простір (агрегатор вакансій НУО)", "type": "Агрегатор НГО-вакансій", "req": "Різні залежно від позиції", "fit": "Висока", "why": "Головне джерело НГО-вакансій в Україні. Оновлюється щодня, є фільтр «Психологічна консультація». Тут з'являються вакансії IOM, Карітас, БФ по всіх областях", "source": "prostir.ua", "url": "https://www.prostir.ua/category/jobs/", "f": "hi"}, {"city": "Уся Україна (стежити)", "title": "Вакансії психологів і фахівців з психосоціальної підтримки", "salary": "Не вказано — дивитись у конкретних оголошеннях", "salaryMin": 0, "employer": "Карітас України", "type": "Міжнародна НГО", "req": "Різні залежно від позиції", "fit": "Висока", "why": "Має офіси у Львові, Тернополі, Івано-Франківську. Регулярно набирає психологів у проєкти MHPSS", "source": "caritas.ua", "url": "https://caritas.ua/vacancy/", "f": "hi"}, {"city": "Уся Україна (стежити)", "title": "Вакансії для роботи з ВПО та біженцями", "salary": "Не вказано — дивитись у конкретних оголошеннях", "salaryMin": 0, "employer": "Право на захист (R2P) — партнер HIAS", "type": "Міжнародна НГО", "req": "Різні залежно від позиції", "fit": "Висока", "why": "Профільна організація саме по ВПО/переселенцях — досвід з вразливими групами. Регулярно оновлює вакансії по регіонах", "source": "r2p.org.ua", "url": "https://r2p.org.ua/vakansiyi/", "f": "hi"}, {"city": "Уся Україна (стежити)", "title": "Психолог/иня до мобільної бригади психосоціальної підтримки", "salary": "Не вказано («конкурентну винагороду»)", "salaryMin": 0, "employer": "Благодійний фонд «Схід SOS»", "type": "Міжнародна НГО", "req": "Вища психологічна освіта, досвід 3+ роки, готовність до відряджень, ФОП", "fit": "Середня", "why": "Профіль (ВПО, мобільні бригади) підходить, але 3 роки досвіду і поточні вакансії були на сході — стежити за новими у західних областях", "source": "east-sos.org", "url": "https://east-sos.org/vacancies/", "f": "mid"}];
+var RANK = {hi:0, mid:1, lo:2};
+var S = {c:"", s:0, q:"", fits:{hi:true, mid:true, lo:false}, k:"fitk", dir:1};
+function $(i){return document.getElementById(i);}
+function pl(n){var a=n%10,b=n%100;
+  if(a===1&&b!==11)return "вакансія";
+  if(a>=2&&a<=4&&(b<10||b>=20))return "вакансії";
+  return "вакансій";}
+function esc(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function run(){
+  var o = D.filter(function(x){
+    if(S.c && x.city !== S.c) return false;
+    if(!S.fits[x.f]) return false;
+    if(S.s > 0 && !(x.salaryMin >= S.s)) return false;
+    if(S.q){
+      var hay = (x.title+" "+x.employer+" "+x.req+" "+x.why+" "+x.type+" "+x.city).toLowerCase();
+      if(hay.indexOf(S.q.toLowerCase()) === -1) return false;
+    }
+    return true;
+  });
+  o.sort(function(a,b){
+    var v;
+    if(S.k === "fitk") v = (RANK[a.f]-RANK[b.f]) || (b.salaryMin-a.salaryMin);
+    else if(S.k === "salaryMin") v = b.salaryMin - a.salaryMin;
+    else v = String(a[S.k]).localeCompare(String(b[S.k]), "uk");
+    return v * S.dir;
+  });
+  var hi = 0, ok = 0, i;
+  for(i=0;i<o.length;i++){ if(o[i].f==="hi") hi++; if(o[i].salaryMin>=20000) ok++; }
+  $("n").innerHTML = "<b>"+o.length+"</b> "+pl(o.length)+" із "+D.length+
+    " · "+hi+" з високою відповідністю · "+ok+" із ЗП від 20 000 грн";
+  if(!o.length){
+    $("b").innerHTML = '<tr><td class="none" colspan="5">Нічого не знайдено. Знизьте мінімальну зарплату або увімкніть «Низька».</td></tr>';
+    return;
+  }
+  var h = "";
+  for(i=0;i<o.length;i++){
+    var x = o[i];
+    h += '<tr class="'+x.f+'">'
+      + '<td data-l="Місто" class="city">'+esc(x.city)+'</td>'
+      + '<td data-l="Вакансія" class="vac"><a href="'+x.url+'" target="_blank" rel="noopener">'+esc(x.title)+'</a><div class="emp">'+esc(x.employer)+'</div></td>'
+      + '<td data-l="Зарплата"><span class="pay '+(x.salaryMin?"":"no")+'">'+esc(x.salary)+'</span></td>'
+      + '<td data-l="Вимоги" class="req"><b>'+esc(x.type)+'</b><br>'+esc(x.req)+'</td>'
+      + '<td data-l="Підходить"><span class="fit '+x.f+'">'+esc(x.fit)+'</span><div class="why">'+esc(x.why)+'</div></td>'
+      + '</tr>';
+  }
+  $("b").innerHTML = h;
+}
+
+function paintChips(){
+  var cs = document.querySelectorAll(".chip"), i;
+  for(i=0;i<cs.length;i++){
+    if(S.fits[cs[i].getAttribute("data-f")]) cs[i].classList.add("on");
+    else cs[i].classList.remove("on");
+  }
+}
+
+$("c").onchange = function(e){ S.c = e.target.value; run(); };
+$("q").oninput  = function(e){ S.q = e.target.value; run(); };
+$("s").oninput  = function(e){
+  S.s = +e.target.value;
+  $("sl").textContent = S.s ? "від "+S.s.toLocaleString("uk-UA")+" грн" : "будь-яка";
+  run();
+};
+(function(){
+  var cs = document.querySelectorAll(".chip"), i;
+  for(i=0;i<cs.length;i++){
+    cs[i].onclick = function(){
+      var f = this.getAttribute("data-f");
+      S.fits[f] = !S.fits[f];
+      paintChips(); run();
+    };
+  }
+  var ths = document.querySelectorAll("th[data-k]");
+  for(i=0;i<ths.length;i++){
+    ths[i].onclick = function(){
+      var k = this.getAttribute("data-k");
+      if(!k) return;
+      S.dir = (S.k === k) ? -S.dir : 1;
+      S.k = k; run();
+    };
+  }
+})();
+$("r").onclick = function(){
+  S.c=""; S.s=0; S.q=""; S.k="fitk"; S.dir=1;
+  S.fits = {hi:true, mid:true, lo:false};
+  $("c").value=""; $("s").value=0; $("q").value=""; $("sl").textContent="будь-яка";
+  paintChips(); run();
+};
+$("sub").textContent = "Оновлено 28.07.2026 · "+D.length+" вакансій · зарплату перевірено на сторінці кожного оголошення";
+paintChips();
+run();
+</script></body></html>
